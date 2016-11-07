@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<canvas id="test" width="750" height="500">
+
+	</canvas>
+		<script>
+			var canvas = document.getElementById('test');
+			var context = canvas.getContext('2d');
+			var img = new Image();
+			img.onload = function () {
+				context.drawImage(img, 10, 10, 60, 60);
+			}
+			img.src = "http://www.html5canvastutorials.com/demos/assets/darth-vader.jpg";
+		</script>
+</body>
+</html>
